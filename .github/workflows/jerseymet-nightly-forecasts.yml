@@ -26,7 +26,6 @@ jobs:
         id: destdir
         run: echo "destdir=$(date +'%Y/%m/met-office/%d')" >> $GITHUB_ENV
 
-        
       - name: Verify directory exists
         run: mkdir -p skies/${{ env.destdir }}
           
@@ -34,7 +33,8 @@ jobs:
         uses: swinton/screenshot-website@v1.x
         with:
           source: https://www.gov.je/weather/shipping/
-          destination: 'skies/${{ env.destdir }}/${{ env.current_date }}-shipping-forecast.png'
+          # destination: 'skies/${{ env.destdir }}/${{ env.current_date }}-shipping-forecast.png'
+          destination: ${{ env.current_date }}-shipping-forecast.png
           full-page: true
           delay: 2
           # remove-elements: cookiebanner
@@ -43,7 +43,8 @@ jobs:
         uses: flameddd/screenshots-ci-action@master
         with:
           source: https://www.gov.je/weather/
-          destination: 'skies/${{ env.destdir }}/${{ env.current_date }}-weather-forecast.png'
+          # destination: 'skies/${{ env.destdir }}/${{ env.current_date }}-weather-forecast.png'
+          destination: ${{ env.current_date }}-weather-forecast.png
           full-page: true
           delay: 5
           # remove-elements: cookiebanner
