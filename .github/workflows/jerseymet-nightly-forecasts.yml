@@ -9,7 +9,7 @@ on:
     branches: [ "main" ]
     
 jobs:
-  build:
+  take_screenshots:
     runs-on: ubuntu-latest
     
     permissions:
@@ -53,6 +53,15 @@ jobs:
         id: cp-weather-forecast-screenshots
         run: cp /home/runner/work/_temp/${{ env.current_date }}-weather-forecast.png /home/runner/work/sky-data/sky-data/skies/${{ env.destdir }}/${{ env.current_date }}-weather-forecast.png          
 
+  commit_to_repo:
+    needs: take_screenshots
+    
+    runs-on: ubuntu-latest
+    
+    permissions:
+      contents: write
+
+    steps:
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: '${{ env.current_date }} - Nightly weather and shipping forecasts from jerseymet'
