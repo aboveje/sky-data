@@ -1,6 +1,17 @@
-# Up Above Jersey
+# Above Jersey: Skies
 
-This project aims to use common sense to identify what is happening in the skies above our island.
+This project aims to use common sense to identify what is happening in the skies above [our island](https://en.wikipedia.org/wiki/Jersey).
+
+## Contributing
+
+We are crowdsourcing images, videos and associated data on a daily basis. Information consists of:
+
+1. Images of the sky throughout the day
+2. Videos of planes flying overhead that appear dispersing material into the atmosphere
+3. Satellite, weather and shipping reports on a daily basis direct from Gov.je
+4. Anecdotal information relating to the state of the sky in open format (.csv)
+
+If you wish to contribute, create a Github
 
 ## Background
 
