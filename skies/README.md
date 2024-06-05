@@ -10,8 +10,9 @@ We are crowdsourcing images, videos and associated data on a daily basis. Inform
 2. Videos of planes flying overhead that appear dispersing material into the atmosphere
 3. Satellite, weather and shipping reports on a daily basis direct from Gov.je
 4. Anecdotal information relating to the state of the sky in open format (.csv)
+5. Flight reports from FlightAware.com that identify planes overhead and correlate this information with imagery/videos
 
-If you wish to contribute, create a Github
+If you wish to contribute, create a Github account, open an issue and submit a pull request. We welcome contributions from everyone.
 
 ## Background
 
