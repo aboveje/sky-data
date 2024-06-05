@@ -33,7 +33,7 @@ jobs:
         uses: swinton/screenshot-website@v1.x
         with:
           source: https://www.gov.je/weather/shipping/
-          path: 'skies/${{ env.destdir }}/${{ env.current_date }}-shipping-forecast.png'
+          # path: 'skies/${{ env.destdir }}/${{ env.current_date }}-shipping-forecast.png'
           destination: ${{ env.current_date }}-shipping-forecast.png
           full-page: true
           delay: 1
@@ -42,10 +42,16 @@ jobs:
         uses: swinton/screenshot-website@v1.x
         with:
           source: https://www.gov.je/weather/
-          path: 'skies/${{ env.destdir }}/${{ env.current_date }}-weather-forecast.png'
+          # path: 'skies/${{ env.destdir }}/${{ env.current_date }}-weather-forecast.png'
           destination: ${{ env.current_date }}-weather-forecast.png
           full-page: true
           delay: 3
+
+      - name: Copy screenshots into repo
+        id: cpscreenshots
+        run: |
+          cp ${{ steps.screenshots-desktop-shipping-forecast.outputs.path }} ./skies/${{ env.destdir }}/${{ env.current_date }}-shipping-forecast.png
+          cp ${{ steps.screenshots-desktop-weather-forecast.outputs.path }} ./skies/${{ env.destdir }}/${{ env.current_date }}-weather-forecast.png
 
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
