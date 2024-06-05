@@ -23,22 +23,22 @@ jobs:
 
       - name: Get current date
         id: date
-        run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
+        run: echo "current_date=$(date +'%Y-%m-%d')" >> $GITHUB_ENV
 
       - name: Set directory with date
         id: destdir
-        run: echo "::set-output name=destdir_date::$(date +'%Y/%m/met-office/%d')"
+        run: echo "destdir=$(date +'%Y/%m/met-office/%d')" >> $GITHUB_ENV
 
       - uses: karol-brejna-i/webpage-screenshot-action@v1
         with:
           url: https://www.gov.je/weather/shipping/
-          output: 'skies/${{ steps.destdir.outputs.destdir_date }}/${{ steps.date.outputs.date }}-shipping-forecast.png'
+          output: 'skies/${{ env.destdir }}/${{ env.current_date }}-shipping-forecast.png'
 
       - uses: karol-brejna-i/webpage-screenshot-action@v1
         with:
           url: https://www.gov.je/weather/
-          output: 'skies/${{ steps.destdir.outputs.destdir_date }}/${{ steps.date.outputs.date }}-weather-forecast.png'
+          output: 'skies/${{ env.destdir }}/${{ env.current_date }}-weather-forecast.png'
 
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: '${{ steps.date.outputs.date }} - Nightly weather and shipping forecasts from jerseymet'
+          commit_message: '${{ env.current_date }} - Nightly weather and shipping forecasts from jerseymet'
