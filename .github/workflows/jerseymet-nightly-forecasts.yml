@@ -1,8 +1,12 @@
 name: Nightly Screenshots from Jersey Met Office
 
+# on:
+#   schedule:
+#     - cron: '0 0 * * *'
+
 on:
-  schedule:
-    - cron: '0 * * * *'
+  push:
+    branches: [ "main" ]
     
 jobs:
   build:
