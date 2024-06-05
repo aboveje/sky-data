@@ -33,11 +33,15 @@ jobs:
         with:
           url: https://www.gov.je/weather/shipping/
           output: 'skies/${{ steps.destdir.outputs.destdir_date }}/${{ steps.date.outputs.date }}-shipping-forecast.png'
+          mode: element
+          xpath: //main
 
       - uses: karol-brejna-i/webpage-screenshot-action@v1
         with:
           url: https://www.gov.je/weather/
           output: 'skies/${{ steps.destdir.outputs.destdir_date }}/${{ steps.date.outputs.date }}-weather-forecast.png'
+          mode: element
+          xpath: //main
 
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
