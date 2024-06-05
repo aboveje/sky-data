@@ -27,7 +27,9 @@ jobs:
         run: echo "destdir=$(date +'%Y/%m/met-office/%d')" >> $GITHUB_ENV
 
       - name: Verify directory exists
-        run: mkdir -p skies/${{ env.destdir }}
+        run: |
+          mkdir -p skies/${{ env.destdir }}
+          pwd
           
       - name: screenshots-desktop-shipping-forecast
         uses: swinton/screenshot-website@v1.x
