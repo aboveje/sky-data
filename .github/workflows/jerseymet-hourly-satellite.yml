@@ -1,4 +1,4 @@
-name: Hourly Met Office Data Collection
+name: Hourly Data Collection from Jersey Met Office
 
 on:
   schedule:
@@ -12,14 +12,13 @@ jobs:
       contents: write
       
     steps:
-      # Checkout repository
       - uses: actions/checkout@v4
+
       - name: Download latest satellite image from jersey met service
         run: |
           mkdir -p skies/$(date +'%Y/%m/met-office/%d')
           wget -O skies/$(date +'%Y/%m/met-office/%d')/$(date +'%Y-%m-%d-%H%M-jerseymet-satellite.jpg') https://sojpublicdata.blob.core.windows.net/jerseymet/Satellite10.JPG
-          
-      # Commit changes to repository/main
+
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: Add latest satellite image from jerseymet
+          commit_message: Latest hourly satellite image from jerseymet
