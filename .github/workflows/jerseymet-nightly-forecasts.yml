@@ -50,8 +50,8 @@ jobs:
       - name: Copy screenshots into repo
         id: cpscreenshots
         run: |
-          cp /home/runner/work/_temp/${{ env.current_date }}-shipping-forecast.png $GITHUB_WORKSPACE/skies/${{ env.destdir }}/${{ env.current_date }}-shipping-forecast.png
-          cp /home/runner/work/_temp/${{ env.current_date }}-weather-forecast.png $GITHUB_WORKSPACE/skies/${{ env.destdir }}/${{ env.current_date }}-weather-forecast.png
+          cp /home/runner/work/_temp/${{ env.current_date }}-shipping-forecast.png ${{ GITHUB_WORKSPACE }}/skies/${{ env.destdir }}/${{ env.current_date }}-shipping-forecast.png
+          cp /home/runner/work/_temp/${{ env.current_date }}-weather-forecast.png ${{ GITHUB_WORKSPACE}}/skies/${{ env.destdir }}/${{ env.current_date }}-weather-forecast.png
 
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
