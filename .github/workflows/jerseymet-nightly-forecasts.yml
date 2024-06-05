@@ -27,15 +27,12 @@ jobs:
         run: echo "destdir=$(date +'%Y/%m/met-office/%d')" >> $GITHUB_ENV
 
       - name: Verify directory exists
-        run: |
-          mkdir -p skies/${{ env.destdir }}
-          pwd
+        run: mkdir -p skies/${{ env.destdir }}
           
       - name: screenshots-desktop-shipping-forecast
         uses: swinton/screenshot-website@v1.x
         with:
           source: https://www.gov.je/weather/shipping/
-          # path: 'skies/${{ env.destdir }}/${{ env.current_date }}-shipping-forecast.png'
           destination: ${{ env.current_date }}-shipping-forecast.png
           full-page: true
           delay: 1
@@ -44,16 +41,17 @@ jobs:
         uses: swinton/screenshot-website@v1.x
         with:
           source: https://www.gov.je/weather/
-          # path: 'skies/${{ env.destdir }}/${{ env.current_date }}-weather-forecast.png'
           destination: ${{ env.current_date }}-weather-forecast.png
           full-page: true
           delay: 3
 
-      - name: Copy screenshots into repo
-        id: cpscreenshots
-        run: |
-          cp /home/runner/work/_temp/${{ env.current_date }}-shipping-forecast.png /home/runner/work/sky-data/sky-data/skies/${{ env.destdir }}/${{ env.current_date }}-shipping-forecast.png
-          cp /home/runner/work/_temp/${{ env.current_date }}-weather-forecast.png /home/runner/work/sky-data/sky-data/skies/${{ env.destdir }}/${{ env.current_date }}-weather-forecast.png
+      - name: Copy shipping forecast screenshot into repo
+        id: cp-shipping-forecast-screenshots
+        run: cp /home/runner/work/_temp/${{ env.current_date }}-shipping-forecast.png /home/runner/work/sky-data/sky-data/skies/${{ env.destdir }}/${{ env.current_date }}-shipping-forecast.png
+        
+      - name: Copy weather forecast screenshot into repo
+        id: cp-weather-forecast-screenshots
+        run: cp /home/runner/work/_temp/${{ env.current_date }}-weather-forecast.png /home/runner/work/sky-data/sky-data/skies/${{ env.destdir }}/${{ env.current_date }}-weather-forecast.png          
 
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
