@@ -21,3 +21,5 @@ jobs:
           
       # Commit changes to repository/main
       - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: Add $(date +'%Y-%m-%d-%H%M-jerseymet-satellite.jpg') image
