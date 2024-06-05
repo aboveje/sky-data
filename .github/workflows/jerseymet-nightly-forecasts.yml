@@ -44,7 +44,7 @@ jobs:
           source: https://www.gov.je/weather/
           destination: 'skies/${{ env.destdir }}/${{ env.current_date }}-weather-forecast.png'
           full-page: true
-          delay: 2
+          delay: 5
           # remove-elements: cookiebanner
 
       - uses: stefanzweifel/git-auto-commit-action@v5
