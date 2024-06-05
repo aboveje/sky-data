@@ -28,16 +28,24 @@ jobs:
       - name: Set directory with date
         id: destdir
         run: echo "destdir=$(date +'%Y/%m/met-office/%d')" >> $GITHUB_ENV
-
-      - uses: karol-brejna-i/webpage-screenshot-action@v1
+          
+      - name: screenshots-desktop-shipping-forecast
+        uses: swinton/screenshot-website@v1.x
         with:
-          url: https://www.gov.je/weather/shipping/
-          output: 'skies/${{ env.destdir }}/${{ env.current_date }}-shipping-forecast.png'
+          source: https://www.gov.je/weather/shipping/
+          destination: 'skies/${{ env.destdir }}/${{ env.current_date }}-shipping-forecast.png'
+          full-page: true
+          delay: 2
+          remove-elements: [cookiebanner]
 
-      - uses: karol-brejna-i/webpage-screenshot-action@v1
+      - name: screenshots-desktop-weather-forecast
+        uses: flameddd/screenshots-ci-action@master
         with:
-          url: https://www.gov.je/weather/
-          output: 'skies/${{ env.destdir }}/${{ env.current_date }}-weather-forecast.png'
+          source: https://www.gov.je/weather/
+          destination: 'skies/${{ env.destdir }}/${{ env.current_date }}-weather-forecast.png'
+          full-page: true
+          delay: 2
+          remove-elements: [cookiebanner]
 
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
