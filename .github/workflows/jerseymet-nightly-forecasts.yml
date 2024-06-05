@@ -34,20 +34,18 @@ jobs:
         with:
           source: https://www.gov.je/weather/shipping/
           path: 'skies/${{ env.destdir }}/${{ env.current_date }}-shipping-forecast.png'
-          # destination: ${{ env.current_date }}-shipping-forecast.png
+          destination: ${{ env.current_date }}-shipping-forecast.png
           full-page: true
           delay: 1
-          # remove-elements: cookiebanner
 
       - name: screenshots-desktop-weather-forecast
         uses: swinton/screenshot-website@v1.x
         with:
           source: https://www.gov.je/weather/
           path: 'skies/${{ env.destdir }}/${{ env.current_date }}-weather-forecast.png'
-          # destination: ${{ env.current_date }}-weather-forecast.png
+          destination: ${{ env.current_date }}-weather-forecast.png
           full-page: true
           delay: 3
-          # remove-elements: cookiebanner
 
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
