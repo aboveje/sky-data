@@ -33,20 +33,20 @@ jobs:
         uses: swinton/screenshot-website@v1.x
         with:
           source: https://www.gov.je/weather/shipping/
-          # destination: 'skies/${{ env.destdir }}/${{ env.current_date }}-shipping-forecast.png'
-          destination: ${{ env.current_date }}-shipping-forecast.png
+          path: 'skies/${{ env.destdir }}/${{ env.current_date }}-shipping-forecast.png'
+          # destination: ${{ env.current_date }}-shipping-forecast.png
           full-page: true
-          delay: 2
+          delay: 1
           # remove-elements: cookiebanner
 
       - name: screenshots-desktop-weather-forecast
-        uses: flameddd/screenshots-ci-action@master
+        uses: swinton/screenshot-website@v1.x
         with:
           source: https://www.gov.je/weather/
-          # destination: 'skies/${{ env.destdir }}/${{ env.current_date }}-weather-forecast.png'
-          destination: ${{ env.current_date }}-weather-forecast.png
+          path: 'skies/${{ env.destdir }}/${{ env.current_date }}-weather-forecast.png'
+          # destination: ${{ env.current_date }}-weather-forecast.png
           full-page: true
-          delay: 5
+          delay: 3
           # remove-elements: cookiebanner
 
       - uses: stefanzweifel/git-auto-commit-action@v5
