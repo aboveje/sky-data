@@ -2,7 +2,7 @@ name: Nightly Screenshots from Jersey Met Office
 
 on:
   schedule:
-    - cron: '0 0 * * *'
+    - cron: '0 * * * *'
     
 jobs:
   build:
