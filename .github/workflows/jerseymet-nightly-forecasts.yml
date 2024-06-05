@@ -36,7 +36,7 @@ jobs:
           destination: 'skies/${{ env.destdir }}/${{ env.current_date }}-shipping-forecast.png'
           full-page: true
           delay: 2
-          remove-elements: [cookiebanner]
+          remove-elements: cookiebanner
 
       - name: screenshots-desktop-weather-forecast
         uses: flameddd/screenshots-ci-action@master
@@ -45,7 +45,7 @@ jobs:
           destination: 'skies/${{ env.destdir }}/${{ env.current_date }}-weather-forecast.png'
           full-page: true
           delay: 2
-          remove-elements: [cookiebanner]
+          remove-elements: cookiebanner
 
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
