@@ -1,6 +1,7 @@
-Date,Status,Evidence
-2024-06-01,Clear,Yes
-2024-06-02,Clear,Yes
-2024-06-03,Geo-Engineering,Yes
-2024-06-04,Grey Clouds (thick),Yes
-2024-06-05,Clear,Yes
+Date,Evidence,Our Status,Met Status
+2024-06-01,Yes,Clear,Fair
+2024-06-02,Yes,Clear,Fair
+2024-06-03,Yes,Geo-Engineering,Cloudy
+2024-06-04,Yes,Grey Clouds (thick),Cloudy
+2024-06-05,Yes,Clear,Fair
+2024-06-06,Yes,Clear,Fair
