@@ -20,8 +20,8 @@ jobs:
 
       - name: Download latest satellite image from jersey met service
         run: |
-          mkdir -p skies/$(date +'%Y/%m/met-office/%d-%B')
-          wget -O skies/$(date +'%Y/%m/met-office/%d-%B')/$(date +'%Y-%m-%d-%H%M-jerseymet-satellite.jpg') https://sojpublicdata.blob.core.windows.net/jerseymet/Satellite10.JPG
+          mkdir -p skies/$(date +'%Y/%m-%B/met-office/%d')
+          wget -O skies/$(date +'%Y/%m-%B/met-office/%d')/$(date +'%Y-%m-%d-%H%M-jerseymet-satellite.jpg') https://sojpublicdata.blob.core.windows.net/jerseymet/Satellite10.JPG
 
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
