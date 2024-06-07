@@ -24,7 +24,7 @@ jobs:
 
       - name: set-directory-with-date
         id: destdir
-        run: echo "destdir=$(date +'%Y/%m/met-office/%d')" >> $GITHUB_ENV
+        run: echo "destdir=$(date +'%Y/%m/met-office/%d-%B')" >> $GITHUB_ENV
 
       - name: verify-directory-exists
         run: mkdir -p skies/${{ env.destdir }}
