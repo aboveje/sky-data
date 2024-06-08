@@ -49,6 +49,7 @@ jobs:
           source: https://portal.hdontap.com/s/embed/?stream=watersplash_visitjersey-CUST&ratio=16:9
           destination: ${{ env.current_date_time }}-watersplash-webcam.png
           full-page: true
+          click-element: "vjs-big-play-button"
           delay: 2
 
       - name: copy-el-tico-webcam-into-repo
