@@ -38,9 +38,8 @@ jobs:
       - name: screenshots-desktop-el-tico
         uses: swinton/screenshot-website@v1.x
         with:
-          source: https://www.twitch.tv/elticojersey
+          source: https://player.twitch.tv/?channel=elticojersey&parent=thesurfyard.com
           destination: ${{ env.current_date_time }}-el-tico-webcam.png
-          element: "persistent-player"
           delay: 2
 
       - name: screenshots-desktop-watersplash
