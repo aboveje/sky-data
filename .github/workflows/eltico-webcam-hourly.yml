@@ -1,0 +1,50 @@
+name: Hourly Sky Image from El Tico Webcam
+
+on:
+  schedule:
+    - cron: '0 * * * *'
+
+# on:
+#   push:
+#     branches: [ "main" ]
+    
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    permissions:
+      contents: write
+      
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: get-current-date-time
+        id: datetime
+        run: echo "current_date_time=$(date +'%Y-%m-%d-%H%M')" >> $GITHUB_ENV
+        
+      - name: set-directory-with-date
+        id: destdir
+        run: echo "destdir=$(date +'%Y/%m-%B/el-tico/%d')" >> $GITHUB_ENV
+
+      - name: verify-directory-exists
+        run: mkdir -p skies/${{ env.destdir }}
+          
+      - name: screenshots-desktop-el-tico
+        uses: swinton/screenshot-website@v1.x
+        with:
+          source: https://www.twitch.tv/elticojersey
+          destination: ${{ env.current_date_time }}-el-tico-webcam.png
+          full-page: true
+          delay: 2
+
+      - name: copy-el-tico-webcam-into-repo
+        run: cp /home/runner/work/_temp/${{ env.current_date_time }}-el-tico-webcam.png /home/runner/work/sky-data/sky-data/skies/${{ env.destdir }}/${{ env.current_date_time }}-el-tico-webcam.png
+        
+      - name: sleep-3s-for-screenshot-to-complete
+        run: sleep 3s
+        shell: bash
+
+      - name: commit-screenshots-to-repo
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: '${{ env.current_date_time }} - Hourly webcam screenshot from El Tico'
