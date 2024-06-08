@@ -40,7 +40,7 @@ jobs:
         with:
           source: https://www.twitch.tv/elticojersey
           destination: ${{ env.current_date_time }}-el-tico-webcam.png
-          full-page: true
+          element: "persistent-player"
           delay: 2
 
       - name: screenshots-desktop-watersplash
