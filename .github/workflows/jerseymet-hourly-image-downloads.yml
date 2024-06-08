@@ -23,6 +23,11 @@ jobs:
           mkdir -p skies/$(date +'%Y/%m-%B/met-office/%d')
           wget -O skies/$(date +'%Y/%m-%B/met-office/%d')/$(date +'%Y-%m-%d-%H%M-jerseymet-satellite.jpg') https://sojpublicdata.blob.core.windows.net/jerseymet/Satellite10.JPG
 
+      - name: Download latest runway camera image from jersey airport
+        run: |
+          mkdir -p skies/$(date +'%Y/%m-%B/jersey-airport/%d')
+          wget -O skies/$(date +'%Y/%m-%B/jersey-airport/%d')/$(date +'%Y-%m-%d-%H%M-jerseyairport-runwaycam.jpg') https://sojpublicdata.blob.core.windows.net/jerseymet/Webcam/Airport_00001.jpg
+
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: Latest hourly satellite image from jerseymet
+          commit_message: Latest hourly images from jerseymet and jerseyairport
