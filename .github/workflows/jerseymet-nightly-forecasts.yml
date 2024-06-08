@@ -51,8 +51,11 @@ jobs:
       - name: copy-weather-forecast-into-repo
         run: cp /home/runner/work/_temp/${{ env.current_date }}-weather-forecast.png /home/runner/work/sky-data/sky-data/skies/${{ env.destdir }}/${{ env.current_date }}-weather-forecast.png          
 
+      - name: sleep-5s-for-screenshots-to-complete
+        run: sleep 5s
+        shell: bash
+
       - name: commit-screenshots-to-repo
         uses: stefanzweifel/git-auto-commit-action@v5
-        if: steps.copy-weather-forecast-into-repo.outcome == 'success'
         with:
           commit_message: '${{ env.current_date }} - Nightly weather and shipping forecasts from jerseymet'
