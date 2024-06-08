@@ -1,4 +1,4 @@
-name: Hourly Sky Image from El Tico Webcam
+name: Hourly webcam captures from El Tico and Watersplash
 
 on:
   schedule:
@@ -31,7 +31,9 @@ jobs:
         run: echo "destdirwatersplash=$(date +'%Y/%m-%B/watersplash/%d')" >> $GITHUB_ENV
 
       - name: verify-directory-exists
-        run: mkdir -p skies/${{ env.destdir }}
+        run: |
+          mkdir -p skies/${{ env.destdir }}
+          mkdir -p skies/${{ env.destdirwatersplash }}
           
       - name: screenshots-desktop-el-tico
         uses: swinton/screenshot-website@v1.x
