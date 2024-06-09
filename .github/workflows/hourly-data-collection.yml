@@ -1,0 +1,75 @@
+name: Hourly Data Collection from Jersey Met Office and Webcams
+
+on:
+  schedule:
+    - cron: '0 * * * *'
+
+# on:
+#   push:
+#     branches: [ "main" ]
+    
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    permissions:
+      contents: write
+      
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: get-current-date-time
+        id: datetime
+        run: echo "current_date_time=$(date +'%Y-%m-%d-%H%M')" >> $GITHUB_ENV
+        
+      - name: set-eltico-directory-with-date
+        id: destdireltico
+        run: echo "destdireltico=$(date +'%Y/%m-%B/el-tico/%d')" >> $GITHUB_ENV
+
+      - name: set-watersplash-directory-with-date
+        id: destdirwatersplash
+        run: echo "destdirwatersplash=$(date +'%Y/%m-%B/watersplash/%d')" >> $GITHUB_ENV
+
+      - name: verify-directory-exists
+        run: |
+          mkdir -p skies/${{ env.destdireltico }}
+          mkdir -p skies/${{ env.destdirwatersplash }}
+          
+      - name: screenshots-desktop-el-tico
+        uses: swinton/screenshot-website@v1.x
+        with:
+          source: https://player.twitch.tv/?channel=elticojersey&parent=thesurfyard.com
+          destination: ${{ env.current_date_time }}-el-tico-webcam.png
+          delay: 2
+
+      - name: screenshots-desktop-watersplash
+        uses: swinton/screenshot-website@v1.x
+        with:
+          source: https://portal.hdontap.com/s/embed/?stream=watersplash_visitjersey-CUST&ratio=16:9
+          destination: ${{ env.current_date_time }}-watersplash-webcam.png
+          full-page: true
+          delay: 2
+
+      - name: copy-el-tico-webcam-into-repo
+        run: cp /home/runner/work/_temp/${{ env.current_date_time }}-el-tico-webcam.png /home/runner/work/sky-data/sky-data/skies/${{ env.destdireltico }}/${{ env.current_date_time }}-el-tico-webcam.png
+
+      - name: copy-watersplash-webcam-into-repo
+        run: cp /home/runner/work/_temp/${{ env.current_date_time }}-watersplash-webcam.png /home/runner/work/sky-data/sky-data/skies/${{ env.destdirwatersplash }}/${{ env.current_date_time }}-watersplash-webcam.png
+
+      - name: Download latest satellite image from jersey met service
+        run: |
+          mkdir -p skies/$(date +'%Y/%m-%B/met-office/%d')
+          wget -O skies/$(date +'%Y/%m-%B/met-office/%d')/$(date +'%Y-%m-%d-%H%M-jerseymet-satellite.jpg') https://sojpublicdata.blob.core.windows.net/jerseymet/Satellite10.JPG
+
+      - name: Download latest runway camera image from jersey airport
+        run: |
+          mkdir -p skies/$(date +'%Y/%m-%B/jersey-airport/%d')
+          wget -O skies/$(date +'%Y/%m-%B/jersey-airport/%d')/$(date +'%Y-%m-%d-%H%M-jerseyairport-runwaycam.jpg') https://sojpublicdata.blob.core.windows.net/jerseymet/Webcam/Airport_00001.jpg
+
+      - name: sleep-3s-for-screenshot-to-complete
+        run: sleep 3s
+        shell: bash
+
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: Latest hourly images from jerseymet and jerseyairport
