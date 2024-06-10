@@ -2,7 +2,7 @@ name: Weekly Screenshots from Jersey Met Office
 
 on:
   schedule:
-    - cron: '0 7 * * 1'
+    - cron: '30 6 * * 1'
 
 # on:
 #   push:
