@@ -40,7 +40,8 @@ jobs:
         with:
           source: https://player.twitch.tv/?channel=elticojersey&parent=thesurfyard.com
           destination: ${{ env.current_date_time }}-el-tico-webcam.png
-          delay: 2
+          full-page: true
+          delay: 4
 
       - name: screenshots-desktop-watersplash
         uses: swinton/screenshot-website@v1.x
