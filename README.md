@@ -1,12 +1,3 @@
-
-
-## Background
-
-, however the primary one is the [Paris Climate Agreement](https://unfccc.int/process-and-meetings/the-paris-agreement).
-
-
-
-
 # Above Jersey: Skies
 
 This project aims to use common sense to identify what is happening in the skies above [our island](https://en.wikipedia.org/wiki/Jersey).
