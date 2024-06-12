@@ -1,15 +1,55 @@
-# Data from Above.je
 
-_This readme is WIP_
-
-> Project Goal: To bring visibility to the state of the skies above Jersey and the direct impact weather modification (geo-engineering) is having on our island.
-
-We are a small collective of locals that are becoming increasingly frustrated with the lack of transparency, clarity and honesty coming from the Government of Jersey with regard to our skies.
-
-This repository houses first-hand evidence of the impact of geo-engineering on our skies and aims to provide verifiable proof that geo-engineering **is being conducted above Jersey** and the negative impacts it is having. We also include many resources published by experts and researchers from around the world. In addition, we have also included a wide range of Government issued documentation and scientific studies in the hope that someone will actually read the information and finally tell the truth about geo-engineering to the masses.
 
 ## Background
 
-There is no climate emergency. The term `climate emergency` is simply a term used by Government departments to trick people into believing that `man made climate change` is occurring. However, when you look back at the historical archaelogical records, it is plain to see there are cycles of `warming` and `cooling`. We will be adding as much information as possible on these phenomenon to enable readers and researchers to conduct their own analysis.
+, however the primary one is the [Paris Climate Agreement](https://unfccc.int/process-and-meetings/the-paris-agreement).
 
-There are several `pan-government agreements` that give rise to the `climate narrative` push, however the primary one is the [Paris Climate Agreement](https://unfccc.int/process-and-meetings/the-paris-agreement).
+
+
+
+# Above Jersey: Skies
+
+This project aims to use common sense to identify what is happening in the skies above [our island](https://en.wikipedia.org/wiki/Jersey).
+We will bring visibility to the state of the skies above Jersey and the direct impact weather modification (geo-engineering) is having on daily life.
+
+## Contributing
+
+We are a small collective of locals that are becoming increasingly frustrated with the lack of transparency, clarity and honesty coming from the Government of Jersey with regard to our skies.
+
+This repository houses first-hand evidence of the impact of geo-engineering on our skies and aims to provide verifiable proof that geo-engineering **is being conducted above Jersey** and the negative impacts it is having. We also include many resources published by experts and researchers from around the world. In addition, we have also included a wide range of Government issued documentation and scientific studies in the hope that someone will actually read this information, take responsibility and finally share the truth with the masses about geo-engineering.
+
+We are crowdsourcing images, videos and associated data on a daily basis. Information consists of:
+
+1. Images of the sky throughout the day
+2. Videos of planes flying overhead that appear dispersing material into the atmosphere
+3. Satellite, weather and shipping reports on a daily basis direct from Gov.je
+4. Anecdotal information relating to the state of the sky in open format (.csv)
+5. Flight reports from FlightAware.com that identify planes overhead and correlate this information with imagery/videos
+
+If you wish to contribute, create a Github account, open an issue and submit a pull request. We welcome contributions from everyone.
+
+## Background
+
+There is no climate emergency. The term `climate emergency` is simply used by Governments and the so-called elites to trick people (`spelling`) into thinking that `man made climate change` is occurring. However, when you look back at historical archaelogical records, raw data and open your own eyes, it is plain to see there are cycles of `warming` and `cooling` that happen on planet earth. We will be adding as much information as possible on these phenomenon to enable readers and researchers to conduct their own analysis.
+
+There are several `pan-government agreements` that give rise to the `climate narrative` push. For reference, the main policies being used to `cast spells` over the population are:
+
+### Global
+
+- [Paris Climate Agreement](https://unfccc.int/process-and-meetings/the-paris-agreement)
+
+### United Kingdom
+
+- [Geo-engineering: the government's view](https://www.gov.uk/government/publications/geo-engineering-research-the-government-s-view) - also available at https://github.com/aboveje/sky-data/blob/main/skies/documentation/uk_govt_view_geoengineering-position-statement.pdf
+- [Geo-engineering programmes](https://www.gov.uk/government/publications/geo-engineering-programmes) - also available at https://github.com/aboveje/sky-data/blob/main/skies/documentation/uk_govt_foi_1411435Geoengineering-2014-06-27.pdf
+- [Geo-engineering and associated chemicals](https://www.gov.uk/government/publications/geo-engineering-and-associated-chemicals) - also available at https://github.com/aboveje/sky-data/blob/main/skies/documentation/uk_govt_foi_geoengineering_2013-11-04.pdf
+- [Met Office position on geoengineering research ](https://www.metoffice.gov.uk/research/climate/earth-system-science/met-office-position-on-geoengineering-research)
+- [UK Petition: Make all forms of geo-engineering affecting the environment illegal](https://petition.parliament.uk/petitions/660726) - petition closed due to dissolution of Parliament on 30th May 2024
+- [The Royal Society - Geoengineering the climate: science, governance and uncertainty](https://royalsociety.org/news-resources/publications/2009/geoengineering-climate/)
+
+### Jersey Specific
+
+- [Paris Agreement extended to Jersey](https://www.gov.je/news/2022/pages/parisagreement.aspx)
+- [Paris Climate Agreement (FOI)](https://www.gov.je/government/freedomofinformation/pages/foi.aspx?ReportID=5709)
+- [Carbon Neutral Roadmap](https://www.gov.je/Government/Pages/StatesReports.aspx?ReportID=5530)
+
