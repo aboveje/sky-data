@@ -30,9 +30,9 @@ Geo-Engineering refers to the intentional modification of cloud properties to in
 
 According to the proponents of these techniques, the goals are to:
 
-a. Cool the planet: By increasing the reflectivity of clouds, reducing the amount of solar radiation absorbed, or enhancing precipitation to remove excess heat from the atmosphere;
-b. Mitigate climate change: By reducing the amount of greenhouse gases in the atmosphere or slowing down global warming;
-c. Improve weather patterns: By altering cloud properties to influence precipitation patterns, reduce extreme weather events, or enhance agricultural productivity.
+1. Cool the planet: By increasing the reflectivity of clouds, reducing the amount of solar radiation absorbed, or enhancing precipitation to remove excess heat from the atmosphere;
+2. Mitigate climate change: By reducing the amount of greenhouse gases in the atmosphere or slowing down global warming;
+3. Improve weather patterns: By altering cloud properties to influence precipitation patterns, reduce extreme weather events, or enhance agricultural productivity.
 
 However, cloud formation geoengineering raises serious concerns about:
 
