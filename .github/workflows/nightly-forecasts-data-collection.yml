@@ -27,7 +27,7 @@ jobs:
         run: echo "destdir=$(date +'%Y/%m-%B/met-office/%d')" >> $GITHUB_ENV
 
       - name: verify-directory-exists
-        run: mkdir -p skies/${{ env.destdir }}
+        run: mkdir -p ${{ env.destdir }}
           
       - name: screenshots-desktop-shipping-forecast
         uses: swinton/screenshot-website@v1.x
@@ -46,25 +46,25 @@ jobs:
           delay: 3
 
       - name: copy-shipping-forecast-into-repo
-        run: cp /home/runner/work/_temp/${{ env.current_date }}-shipping-forecast.png /home/runner/work/sky-data/sky-data/skies/${{ env.destdir }}/${{ env.current_date }}-shipping-forecast.png
+        run: cp /home/runner/work/_temp/${{ env.current_date }}-shipping-forecast.png /home/runner/work/sky-data/sky-data/${{ env.destdir }}/${{ env.current_date }}-shipping-forecast.png
         
       - name: copy-weather-forecast-into-repo
-        run: cp /home/runner/work/_temp/${{ env.current_date }}-weather-forecast.png /home/runner/work/sky-data/sky-data/skies/${{ env.destdir }}/${{ env.current_date }}-weather-forecast.png          
+        run: cp /home/runner/work/_temp/${{ env.current_date }}-weather-forecast.png /home/runner/work/sky-data/sky-data/${{ env.destdir }}/${{ env.current_date }}-weather-forecast.png          
 
       - name: Download latest air temperature observation at Maison St Louis from jersey met service
-        run: wget -O skies/$(date +'%Y/%m-%B/met-office/%d')/$(date +'%Y-%m-%d-%H%M-jerseymet-weather-obs-air-temp-maison-st-louis-observatory.png') https://sojpublicdata.blob.core.windows.net/jerseymet/Town/MSLTemp.Temp_MSL.png
+        run: wget -O $(date +'%Y/%m-%B/met-office/%d')/$(date +'%Y-%m-%d-%H%M-jerseymet-weather-obs-air-temp-maison-st-louis-observatory.png') https://sojpublicdata.blob.core.windows.net/jerseymet/Town/MSLTemp.Temp_MSL.png
 
       - name: Download latest wind direction and speed observations at St Helier Harbour from jersey met service
-        run: wget -O skies/$(date +'%Y/%m-%B/met-office/%d')/$(date +'%Y-%m-%d-%H%M-jerseymet-weather-obs-wind-dir-speed-st-helier.png') https://sojpublicdata.blob.core.windows.net/jerseymet/Town/internet.Wind.png
+        run: wget -O $(date +'%Y/%m-%B/met-office/%d')/$(date +'%Y-%m-%d-%H%M-jerseymet-weather-obs-wind-dir-speed-st-helier.png') https://sojpublicdata.blob.core.windows.net/jerseymet/Town/internet.Wind.png
 
       - name: Download latest wind direction and speed observations at St Catherines Breakwater from jersey met service
-        run: wget -O skies/$(date +'%Y/%m-%B/met-office/%d')/$(date +'%Y-%m-%d-%H%M-jerseymet-weather-obs-wind-dir-speed-st-catherines.png') https://sojpublicdata.blob.core.windows.net/jerseymet/Town/StCathWind.Wind2.png
+        run: wget -O $(date +'%Y/%m-%B/met-office/%d')/$(date +'%Y-%m-%d-%H%M-jerseymet-weather-obs-wind-dir-speed-st-catherines.png') https://sojpublicdata.blob.core.windows.net/jerseymet/Town/StCathWind.Wind2.png
 
       - name: Download latest rainfall at Maison St Louis from jersey met service
-        run: wget -O skies/$(date +'%Y/%m-%B/met-office/%d')/$(date +'%Y-%m-%d-%H%M-jerseymet-weather-obs-rainfall-maison-st-louis-observatory.png') https://sojpublicdata.blob.core.windows.net/jerseymet/Town/internet.Rainfall.png
+        run: wget -O $(date +'%Y/%m-%B/met-office/%d')/$(date +'%Y-%m-%d-%H%M-jerseymet-weather-obs-rainfall-maison-st-louis-observatory.png') https://sojpublicdata.blob.core.windows.net/jerseymet/Town/internet.Rainfall.png
 
       - name: Download latest UV index observations at St Catherines Breakwater from jersey met service
-        run: wget -O skies/$(date +'%Y/%m-%B/met-office/%d')/$(date +'%Y-%m-%d-%H%M-jerseymet-weather-obs-uvindex-maison-st-louis-observatory.png') https://sojpublicdata.blob.core.windows.net/jerseymet/Town/internet.UV.png
+        run: wget -O $(date +'%Y/%m-%B/met-office/%d')/$(date +'%Y-%m-%d-%H%M-jerseymet-weather-obs-uvindex-maison-st-louis-observatory.png') https://sojpublicdata.blob.core.windows.net/jerseymet/Town/internet.UV.png
 
       - name: sleep-5s-for-screenshots-to-complete
         run: sleep 5s

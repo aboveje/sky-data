@@ -27,16 +27,16 @@ jobs:
         run: echo "destdir=$(date +'%Y/%m-%B/met-office/%d')" >> $GITHUB_ENV
 
       - name: verify-directory-exists
-        run: mkdir -p skies/${{ env.destdir }}  
+        run: mkdir -p ${{ env.destdir }}  
       
       - name: Download 7-day chart for air temperature at Maison St Louis from jersey met service
-        run: wget -O skies/$(date +'%Y/%m-%B/met-office/%d')/$(date +'%Y-%m-%d-jerseymet-weather-obs-7-day-air-temp-maison-st-louis-observatory.png') https://sojpublicdata.blob.core.windows.net/jerseymet/Town/MSLTemp.Temp_MSL_7day.png
+        run: wget -O $(date +'%Y/%m-%B/met-office/%d')/$(date +'%Y-%m-%d-jerseymet-weather-obs-7-day-air-temp-maison-st-louis-observatory.png') https://sojpublicdata.blob.core.windows.net/jerseymet/Town/MSLTemp.Temp_MSL_7day.png
 
       - name: Download 7-day chart for relative humidity at Maison St Louis from jersey met service
-        run: wget -O skies/$(date +'%Y/%m-%B/met-office/%d')/$(date +'%Y-%m-%d-jerseymet-weather-obs-7-day-relative-humidity-maison-st-louis-observatory.png') https://sojpublicdata.blob.core.windows.net/jerseymet/Town/MSLTemp.RH_MSL_7day1.png
+        run: wget -O $(date +'%Y/%m-%B/met-office/%d')/$(date +'%Y-%m-%d-jerseymet-weather-obs-7-day-relative-humidity-maison-st-louis-observatory.png') https://sojpublicdata.blob.core.windows.net/jerseymet/Town/MSLTemp.RH_MSL_7day1.png
 
       - name: Download 7-day chart for air pressure at Maison St Louis from jersey met service
-        run: wget -O skies/$(date +'%Y/%m-%B/met-office/%d')/$(date +'%Y-%m-%d-jerseymet-weather-obs-7-day-air-pressure-maison-st-louis-observatory.png') https://sojpublicdata.blob.core.windows.net/jerseymet/Town/Pressure.Pressure_MSL_7day.png
+        run: wget -O $(date +'%Y/%m-%B/met-office/%d')/$(date +'%Y-%m-%d-jerseymet-weather-obs-7-day-air-pressure-maison-st-louis-observatory.png') https://sojpublicdata.blob.core.windows.net/jerseymet/Town/Pressure.Pressure_MSL_7day.png
       
       - name: commit-screenshots-to-repo
         uses: stefanzweifel/git-auto-commit-action@v5
