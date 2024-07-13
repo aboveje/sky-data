@@ -3,6 +3,8 @@
 This project aims to use common sense to identify what is happening in the skies above [our island](https://en.wikipedia.org/wiki/Jersey).
 We will bring visibility to the state of the skies above Jersey and the direct impact weather modification (geo-engineering) is having on daily life.
 
+As at 13th July 2024, timelapse cameras have been setup to take photos of the skies at 30 minute intervals. Community images will now be uploaded on a weekly basis.
+
 ## Contributing
 
 We are a small collective of locals that are becoming increasingly frustrated with the lack of transparency, clarity and honesty coming from the Government of Jersey with regard to our skies.
