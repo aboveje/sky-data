@@ -11,6 +11,7 @@ This repository is a work in progress and will continue to evolve as we receive 
 
 ```
 .
+├── .github                       # GitHub Actions scripts for scheduled data collection tasks
 ├── 2023                          # Community images and videos from 2023
 ├── 2024                          # Community images and videos from 2023
 ├── geo-engineering-evidence      # Source files for policy documents etc
