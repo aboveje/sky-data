@@ -60,26 +60,18 @@ Geo-Engineering is a complex and multifaceted field that requires careful consid
 
 There is no climate emergency. The term `climate emergency` is a term used by Governments in an attempt to manipulate the general population into thinking that `man made climate change` is occurring. However, when you look at historical archaelogical records, raw data and take the first step towards opening your own eyes, it's plain to see there are cycles of `warming` and `cooling` that happen on planet earth. We will be adding as much information as possible on these phenomenon to enable readers and researchers to conduct their own analysis.
 
-There are several `pan-government agreements` that give rise to the `climate narrative`. For reference, the main policies being used to cast spells over the population are:
+There are several `pan-government agreements` that give rise to the `climate narrative`. Reference material:
 
-### Global
-
+- [Paris Agreement extended to Jersey](https://www.gov.je/news/2022/pages/parisagreement.aspx)
+- [Paris Climate Agreement (FOI)](https://www.gov.je/government/freedomofinformation/pages/foi.aspx?ReportID=5709)
+- [Carbon Neutral Roadmap](https://www.gov.je/Government/Pages/StatesReports.aspx?ReportID=5530)
 - [Paris Climate Agreement](https://unfccc.int/process-and-meetings/the-paris-agreement)
-
-### United Kingdom
-
 - [Geo-engineering: the government's view](https://www.gov.uk/government/publications/geo-engineering-research-the-government-s-view) - also available at https://github.com/aboveje/sky-data/blob/main/skies/documentation/uk_govt_view_geoengineering-position-statement.pdf
 - [Geo-engineering programmes](https://www.gov.uk/government/publications/geo-engineering-programmes) - also available at https://github.com/aboveje/sky-data/blob/main/skies/documentation/uk_govt_foi_1411435Geoengineering-2014-06-27.pdf
 - [Geo-engineering and associated chemicals](https://www.gov.uk/government/publications/geo-engineering-and-associated-chemicals) - also available at https://github.com/aboveje/sky-data/blob/main/skies/documentation/uk_govt_foi_geoengineering_2013-11-04.pdf
 - [Met Office position on geoengineering research ](https://www.metoffice.gov.uk/research/climate/earth-system-science/met-office-position-on-geoengineering-research)
 - [UK Petition: Make all forms of geo-engineering affecting the environment illegal](https://petition.parliament.uk/petitions/660726) - petition closed due to dissolution of Parliament on 30th May 2024
 - [The Royal Society - Geoengineering the climate: science, governance and uncertainty](https://royalsociety.org/news-resources/publications/2009/geoengineering-climate/)
-
-### Jersey Specific
-
-- [Paris Agreement extended to Jersey](https://www.gov.je/news/2022/pages/parisagreement.aspx)
-- [Paris Climate Agreement (FOI)](https://www.gov.je/government/freedomofinformation/pages/foi.aspx?ReportID=5709)
-- [Carbon Neutral Roadmap](https://www.gov.je/Government/Pages/StatesReports.aspx?ReportID=5530)
 
 ## License Notice
 
