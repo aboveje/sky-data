@@ -51,9 +51,9 @@ Geo-Engineering is a complex and multifaceted field that requires careful consid
 
 ## Background
 
-There is no climate emergency. The term `climate emergency` is simply used by Governments and the so-called elites to trick people (`spelling`) into thinking that `man made climate change` is occurring. However, when you look back at historical archaelogical records, raw data and open your own eyes, it is plain to see there are cycles of `warming` and `cooling` that happen on planet earth. We will be adding as much information as possible on these phenomenon to enable readers and researchers to conduct their own analysis.
+There is no climate emergency. The term `climate emergency` is a term used by Governments in an attempt to manipulate the general population into thinking that `man made climate change` is occurring. However, when you look at historical archaelogical records, raw data and take the first step towards opening your own eyes, it's plain to see there are cycles of `warming` and `cooling` that happen on planet earth. We will be adding as much information as possible on these phenomenon to enable readers and researchers to conduct their own analysis.
 
-There are several `pan-government agreements` that give rise to the `climate narrative` push. For reference, the main policies being used to `cast spells` over the population are:
+There are several `pan-government agreements` that give rise to the `climate narrative`. For reference, the main policies being used to cast spells over the population are:
 
 ### Global
 
