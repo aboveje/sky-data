@@ -74,3 +74,17 @@ There are several `pan-government agreements` that give rise to the `climate nar
 - [Paris Climate Agreement (FOI)](https://www.gov.je/government/freedomofinformation/pages/foi.aspx?ReportID=5709)
 - [Carbon Neutral Roadmap](https://www.gov.je/Government/Pages/StatesReports.aspx?ReportID=5530)
 
+## License Notice
+
+This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with this program. If not, see <https://www.gnu.org/licenses/>. 
+
+## Copyright
+
+The Above.je Community, hereby disclaims all copyright interest in the program "Above.je" (which records the skies above jersey).
+
+Copyright 2024, Above.je Community
+
