@@ -49,14 +49,14 @@ Numerous scientists, individuals and groups have highlighted the potential chall
 
 Geo-Engineering is a complex and multifaceted field that requires careful consideration of the potential benefits and risks.
 
-### Resources and Links
+**Useful Resources**
 
 - [Patent - Hurricane and tornado control device](https://patents.google.com/patent/US20030085296A1/en)
 - [Prof Jim Haywood - Met Office](https://www.metoffice.gov.uk/research/people/jim-haywood) - Jim is engaged in measurement and modelling aerosols and their impacts on radiation, clouds, visibility and air-quality.
 - [Video: 2024-07-06 - Geoengineering Whistleblower Interview with Kristen Meghan](https://www.kla.tv/index.php?a=showlanguage&lang=en&id=29651&date=2024-07-06)
 - [Video: 2024-07-08 - Using HAARP (US Appropriations Subcommittee Meeting](https://x.com/myhiddenvalue/status/1810290023587320142)
 
-## Background
+## The Climate Narrative
 
 There is no climate emergency. The term `climate emergency` is a term used by Governments in an attempt to manipulate the general population into thinking that `man made climate change` is occurring. However, when you look at historical archaelogical records, raw data and take the first step towards opening your own eyes, it's plain to see there are cycles of `warming` and `cooling` that happen on planet earth. We will be adding as much information as possible on these phenomenon to enable readers and researchers to conduct their own analysis.
 
