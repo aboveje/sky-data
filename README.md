@@ -9,6 +9,7 @@ As at 13th July 2024, timelapse cameras have been setup to take photos of the sk
 
 This repository is a work in progress and will continue to evolve as we receive new contributions. The current structure is as follows:
 
+```
 .
 ├── 2023                          # Community images and videos from 2023
 ├── 2024                          # Community images and videos from 2023
@@ -17,6 +18,7 @@ This repository is a work in progress and will continue to evolve as we receive 
 ├── reports                       # Periodic reports and analysis
 ├── GNU-LICENSE
 └── README.md
+```
 
 ## Contributing
 
