@@ -5,6 +5,19 @@ We will bring visibility to the state of the skies above Jersey and the direct i
 
 As at 13th July 2024, timelapse cameras have been setup to take photos of the skies at 30 minute intervals. Community images will now be uploaded on a weekly basis.
 
+## Getting Started
+
+This repository is a work in progress and will continue to evolve as we receive new contributions. The current structure is as follows:
+
+.
+├── 2023                          # Community images and videos from 2023
+├── 2024                          # Community images and videos from 2023
+├── geo-engineering-evidence      # Source files for policy documents etc
+├── news-articles                 # News reports and articles
+├── reports                       # Periodic reports and analysis
+├── GNU-LICENSE
+└── README.md
+
 ## Contributing
 
 We are a small collective of locals that are becoming increasingly frustrated with the lack of transparency, clarity and honesty coming from the Government of Jersey with regard to our skies.
