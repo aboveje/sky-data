@@ -21,7 +21,7 @@ This repository is a work in progress and will continue to evolve as we receive 
 └── README.md
 ```
 
-## Contributing
+## About Above.je
 
 We are a small collective of locals that are becoming increasingly frustrated with the lack of transparency, clarity and honesty coming from the Government of Jersey with regard to our skies.
 
